@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 ## Components
-pacman -Syy && pacman -S terminus-font picom --noconfirm
+pacman -Syy && pacman -S terminus-font picom feh --noconfirm
 
 ## install fonts
 sudo mv polybar/fonts/ /usr/share/fonts/
