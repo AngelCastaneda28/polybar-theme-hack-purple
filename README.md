@@ -2,4 +2,4 @@
 Presento un tema perzonalizado con modulos integrados dirigido a polybar
 
 #
-![Screen](imagepng)
+![Screen](image.png)
