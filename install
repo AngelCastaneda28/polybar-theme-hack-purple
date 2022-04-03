@@ -7,14 +7,14 @@ pacman -Syy && pacman -S terminus-font picom feh --noconfirm
 sudo mv polybar/fonts/ /usr/share/fonts/
 
 ## install polybar
-rm -r ~/.config/polybar
+rm -r $HOME/.config/polybar
 sleep 2s
-mv polybar ~/.config/
+mv polybar $HOME/.config/
 
 ## wallpaper
-mv wallpaper/wall.png ~/.config
+mv wallpaper/wall.png $HOME/.config
 
 ## config BSPWM
-rm ~/.config/bspwm/bspwmrc
-mv bspwmrc ~/.config/bspwm/
+rm $HOME/.config/bspwm/bspwmrc
+mv bspwmrc $HOME/.config/bspwm/
 
