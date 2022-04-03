@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+## Components
+sudo pacman -Syy && sudo pacman -S terminus-font picom feh --noconfirm
+
+## install fonts
+sudo mv polybar/fonts/ /usr/share/fonts/
+
+## install polybar
+sudo rm -r $HOME/.config/polybar
+sleep 2s
+mv polybar $HOME/.config/
+
+## wallpaper
+mv wallpaper/wall.png $HOME/.config
+
+## config BSPWM
+sudo rm $HOME/.config/bspwm/bspwmrc
+mv bspwmrc $HOME/.config/bspwm/
+
