@@ -1956,7 +1956,7 @@ blue-gray = #546e7a
 
 [module/system-cpu-temppercore]
 type = custom/script
-exec = ~/polybar-scripts/system-cpu-temppercore.sh
+exec = ~/.config/polybar/system-cpu-temppercore.sh
 interval = 60
 
 [module/info-xampp]
