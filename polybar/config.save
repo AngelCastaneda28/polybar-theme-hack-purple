@@ -27,9 +27,7 @@ font-2 = "Iosevka Nerd Font:size=20;5"
 font-3 = "Hurmit Nerd Font:style=light:size=10;2"
 
 ;; Bar Settings
-;############################# 
-; Barra_3_down
-;###########################
+
 [bar/left-down]
 
 font-0 = "Terminus:size=12;0"
@@ -65,21 +63,21 @@ fixed-center = true
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in a width or height of 50% minus 10 pixels
 ;46.6
-width = 24.6%
-height = 35
+width = 3%
+height = 1
 
 ; Offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
 ; the percentage can optionally be extended with a pixel offset like so:
 ; 50%:-10, this will result in an offset in the x or y direction 
 ; of 50% minus 10 pixels
-offset-x = 52.3%
-offset-y = 0.9%
+offset-x = 0.7%
+offset-y = 6%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -111,7 +109,7 @@ radius = 0.5
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -257,9 +255,7 @@ cursor-scroll =
 ;awesome
 ;etc
 
-;############################
-; Barra_2_down_workspaces
-;###########################
+
 [bar/left-2]
 
 font-0 = "Terminus:size=12;0"
@@ -306,14 +302,14 @@ offset-x = 26.8%
 offset-y = 0.9%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
-;background-0 = #011A2B
+;;background-0 = 
 
 ; Value used for drawing rounded corners
 ; Note: This shouldn't be used together with border-size because the border 
@@ -326,8 +322,8 @@ radius = 5.0
 ; Individual values can be defined using:
 ;   {overline,underline}-size
 ;   {overline,underline}-color
-;overline-size = 2
-;overline-color = #011A2B
+;;overline-size = 0
+;;overline-color = ${color.ac}
 
 ; Values applied to all borders
 ; Individual side values can be defined using:
@@ -341,7 +337,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color =#30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -486,9 +482,6 @@ cursor-scroll =
 ;awesome
 ;etc
 
-;#############################
-; Barra_1_down
-;#############################
 [bar/left-one]
 
 font-0 = "Terminus:size=12;0"
@@ -535,10 +528,10 @@ offset-x = 0.7%
 offset-y = 0.9%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -561,7 +554,7 @@ radius = 5.0
 ; Values applied to all borders
 ; Individual side values can be defined using:
 ;   border-{left,top,right,bottom}-size
-;   border-{left,top011A2B2,right,bottom}-color
+;   border-{left,top,right,bottom}-color
 ; The top and bottom borders are added to the bar height, so the effective
 ; window height is:
 ;   height + border-top-size + border-bottom-size
@@ -570,7 +563,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -715,9 +708,7 @@ cursor-scroll =
 ;awesome
 ;etc
 
-;#####################
-; barra_logotipo_up
-;####################
+
 [bar/logo]
 
 font-0 = "Noto Sans:size=10;2"
@@ -763,10 +754,10 @@ offset-x = 0.70%
 offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -798,7 +789,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -946,10 +937,6 @@ cursor-scroll =
 
 ;-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-;###############################
-; Barra_2_up
-;##############################
-
 [bar/left]
 
 font-0 = "Terminus:size=12;0"
@@ -995,10 +982,10 @@ offset-x = 7.2%
 offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -1030,7 +1017,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -1177,9 +1164,7 @@ cursor-scroll =
 
 
 ;-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-;#################################
-; Barra_4_up
-;
+
 [bar/right]
 
 font-0 = "Noto Sans:size=10;2"
@@ -1225,10 +1210,10 @@ offset-x = 87%
 offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -1260,7 +1245,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -1408,9 +1393,6 @@ cursor-scroll =
 
 ;-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-;#############################
-; Barra_4_down_wifi
-; ############################
 [bar/cent]
 
 font-0 = "Noto Sans:size=10;2"
@@ -1456,10 +1438,10 @@ offset-x = 77.6%
 offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -1491,7 +1473,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -1684,10 +1666,10 @@ offset-x = 52.5%
 offset-y = 1%
 
 ; Background ARGB color (e.g. #f00, #ff992a, #ddff1023)
-background = #011A2B
+background = ${color.bg}
 
 ; Foreground ARGB color (e.g. #f00, #ff992a, #ddff1023)
-foreground = #30E8E8
+foreground = ${color.fg}
 
 ; Background gradient (vertical steps)
 ;   background-[0-9]+ = #aarrggbb
@@ -1719,7 +1701,7 @@ radius = 5.0
 ; following horizontal space on the bar:
 ;   width - border-right-size - border-left-size
 border-size = 1
-border-color = #30E8E8
+border-color = ${color.fg}
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
@@ -2209,7 +2191,7 @@ time-alt = %I:%M %p
 time = %H:%M
 format = <label>
 label = %time%
-label-foreground = #30E8E8
+label-foreground = #C200E9
 
 ;--------------------------------------------
 
@@ -2222,18 +2204,18 @@ time = %b %d
 time-alt = %a
 format = <label>
 label = %time%
-label-foreground = #30E8E8
+label-foreground = #C200E9
 
 ;--------------------------------------------
 
 [module/cpu]
 type = custom/script
-exec = ~/.config/polybar/cpu-freq.sh
+exec = ~/.config/scripts/cpu-freq.sh
 tail = true
 interval = 1
-click-left = ~/.config/polybar/./cpu-scale.sh l
-click-middle = ~/.config/polybar/./cpu-scale.sh m
-click-right = ~/.config/polybar/./cpu-scale.sh h
+click-left = ~/.config/scripts/./cpu-scale.sh l
+click-middle = ~/.config/scripts/./cpu-scale.sh m
+click-right = ~/.config/scripts/./cpu-scale.sh h
 
 [module/cpu_load]
 type = custom/script
@@ -2333,7 +2315,7 @@ click-right = ~/.config/polybar/scripts/deepin-style &
 type = custom/text
 content = 
 content-font = 4
-content-foreground = #30E8E8
+content-foreground = #C200E9
 content-padding = 1
 click-left = ~/.config/polybar/scripts/deepin-menu
 click-right = ~/.config/polybar/scripts/deepin-menu
@@ -2342,8 +2324,8 @@ click-right = ~/.config/polybar/scripts/deepin-menu
 type = custom/text
 
 content = |
-content-foreground = #011A2B
-content-background = #011A2B
+content-foreground = ${color.bg}
+content-background = ${color.bg}
 content-padding = 0
 
 [module/sep2]
@@ -2449,9 +2431,9 @@ icon-9= X;
 ;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
 ; Default: <label-state>
 format = <label-state>
-format-background = #011A2B
-format-underline = ${color.green}
-format-overline = ${color.yellow}
+format-background = ${color.bg}
+format-underline = ${color.bg}
+format-overline = ${color.bg}
 format-padding = 0
 
 ; Available tokens:
@@ -2466,7 +2448,7 @@ label-monitor = %name%
 ; Default: %icon%  %name%
 label-active = %icon%
 label-active-foreground = ${color.ag}
-;;label-active-background = ${color.green}
+;;label-active-background = ${color.bg}
 ;;label-active-overline = ${color.ac}
 
 ; Available tokens:
@@ -2475,7 +2457,7 @@ label-active-foreground = ${color.ag}
 ;   %index%
 ; Default: %icon%  %name%
 label-occupied = %icon%
-;;label-occupied-underline = ${color.green}
+;;label-occupied-underline = ${color.fg}
 
 ; Available tokens:
 ;   %name%
@@ -2483,8 +2465,8 @@ label-occupied = %icon%
 ;   %index%
 ; Default: %icon%  %name%
 label-urgent = %icon%
-label-urgent-foreground = #30E8E8
-label-urgent-background = #011A2B
+label-urgent-foreground = ${color.fg}
+label-urgent-background = ${color.bg}
 ;;label-urgent-underline = ${color.red}
 
 ; Available tokens:
@@ -2493,7 +2475,7 @@ label-urgent-background = #011A2B
 ;   %index%
 ; Default: %icon%  %name%
 label-empty = %icon%
-label-empty-foreground = #30E8E8
+label-empty-foreground = ${color.fg}
 
 label-active-padding = 1
 label-urgent-padding = 1
@@ -2540,7 +2522,7 @@ icon-6=VII;
 ;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
 ; Default: <label-state>
 format = <label-state>
-format-background = #011A2B
+format-background = ${color.bg}
 format-underline = ${color.bg}
 format-overline = ${color.bg}
 format-padding = 0
@@ -2584,7 +2566,7 @@ label-urgent-background = ${color.bg}
 ;   %index%
 ; Default: %icon%  %name%
 label-empty = %icon%
-label-empty-foreground = #30E8E8
+label-empty-foreground = ${color.fg}
 
 label-active-padding = 1
 label-urgent-padding = 1
